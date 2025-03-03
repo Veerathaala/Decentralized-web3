@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Identity</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Decentralized Identity Verification</h1>
+    
+    <div id="register-section">
+        <h2>Issue Credential</h2>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="idNumber" placeholder="Enter ID Number">
+        <button onclick="issueCredential()">Issue Credential</button>
+    </div>
+
+    <div id="verify-section">
+        <h2>Verify Credential</h2>
+        <input type="text" id="verifyAddress" placeholder="Enter Ethereum Address">
+        <button onclick="verifyCredential()">Verify</button>
+        <p id="verificationResult"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
